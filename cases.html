@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cases & Resultados — Orbit Brands</title>
+  <meta name="description" content="Resultados reais de criadores que transformaram audiência em renda recorrente com o Método Orbit Partners." />
+  <link rel="stylesheet" href="assets/css/orbit.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23e8a020'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%230a0800' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%230a0800'/%3E%3C/svg%3E" />
+  <style>
+    .coming-soon-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: var(--gold-dim);
+      border: 1px solid rgba(232,160,32,0.25);
+      border-radius: var(--r-full);
+      padding: 6px 16px;
+    }
+    .coming-soon-badge::before { content: '●'; animation: pulse 1.5s ease-in-out infinite; }
+    .case-placeholder-text { color: var(--color-subtle); font-size: 0.85rem; }
+
+    /* Manifesto section */
+    .manifesto {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .manifesto__grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: var(--sp-16);
+      align-items: center;
+    }
+    @media (max-width: 768px) { .manifesto__grid { grid-template-columns: 1fr; } }
+    .manifesto__nums { display: flex; flex-direction: column; gap: var(--sp-6); }
+    .manifesto__num-item { border-left: 2px solid var(--gold-dim); padding-left: var(--sp-5); }
+    .manifesto__num-item:hover { border-left-color: var(--gold); }
+    .big-num {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .big-num-label { font-size: 0.88rem; color: var(--color-muted); margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><div class="nav__logo-icon" aria-hidden="true"></div>Orbit Brands</a>
+      <ul class="nav__links">
+        <li><a href="como-funciona.html">Como Funciona</a></li>
+        <li><a href="para-quem.html">Para Quem É</a></li>
+        <li><a href="cases.html">Cases</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="aplicacao.html" class="btn btn--primary btn--icon hide-mobile">Aplicar <span class="btn__arrow">→</span></a>
+        <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav__mobile">
+    <a href="como-funciona.html">Como Funciona</a>
+    <a href="para-quem.html">Para Quem É</a>
+    <a href="cases.html">Cases</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="aplicacao.html" style="color:var(--gold);font-weight:700;">Aplicar →</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge badge--gold anim-float-1">Resultados</span>
+      <h1 class="anim-float-2">Cases & Resultados</h1>
+      <p class="anim-float-3">Aqui vão viver as histórias dos criadores que transformaram audiência em patrimônio com o Método Orbit Partners.</p>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--sp-10);" class="reveal">
+        <span class="coming-soon-badge">Primeiros cases chegando em breve</span>
+      </div>
+
+      <div class="cases__grid">
+        <!-- Placeholder cards -->
+        <div class="case-card case-card--placeholder reveal">
+          <p class="case-placeholder-text" style="text-align:center;">Case em construção</p>
+          <p style="color:var(--color-subtle);font-size:0.78rem;text-align:center;">Criador de finanças · 120k seguidores</p>
+        </div>
+        <div class="case-card case-card--placeholder reveal reveal-delay-2">
+          <p class="case-placeholder-text" style="text-align:center;">Case em construção</p>
+          <p style="color:var(--color-subtle);font-size:0.78rem;text-align:center;">Criadora de maternidade · 85k seguidores</p>
+        </div>
+        <div class="case-card case-card--placeholder reveal reveal-delay-4">
+          <p class="case-placeholder-text" style="text-align:center;">Case em construção</p>
+          <p style="color:var(--color-subtle);font-size:0.78rem;text-align:center;">Creator de lifestyle · 200k seguidores</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--sp-8);" class="reveal">
+        <p style="color:var(--color-subtle);font-size:0.9rem;max-width:500px;margin:0 auto;">Estamos em fase de primeiras parcerias. Se você quer ser um dos casos de estudo que vai aparecer aqui, o timing não poderia ser melhor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto de números -->
+  <section class="section manifesto">
+    <div class="container">
+      <div class="manifesto__grid">
+        <div class="manifesto__nums reveal">
+          <div class="manifesto__num-item">
+            <div class="big-num">6</div>
+            <p class="big-num-label">Semanas para o primeiro produto no ar</p>
+          </div>
+          <div class="manifesto__num-item">
+            <div class="big-num">0</div>
+            <p class="big-num-label">Reais pagos pelo criador</p>
+          </div>
+          <div class="manifesto__num-item">
+            <div class="big-num">∞</div>
+            <p class="big-num-label">Potencial de escala ao longo do tempo</p>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <span class="badge badge--phase" style="margin-bottom:var(--sp-5);">O que construímos juntos</span>
+          <h2 style="margin-bottom:var(--sp-5);">Cada case aqui vai contar<br>uma história de transformação.</h2>
+          <p style="margin-bottom:var(--sp-5);">Da primeira call de diagnóstico até a renda recorrente do mês seguinte. Do criador que dependia 100% de publi para o empreendedor que tem um produto próprio gerando resultado enquanto dorme.</p>
+          <p style="margin-bottom:var(--sp-8);">Esses são os resultados que a Orbit Brands foi criada para produzir. E cada parceria que fechamos hoje vai aparecer aqui em breve.</p>
+          <a href="aplicacao.html" class="btn btn--primary btn--icon">
+            Quero ser um desses cases <span class="btn__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <span class="badge badge--gold" style="margin-bottom:var(--sp-6);display:inline-flex;">Seja o próximo</span>
+      <h2>O timing de entrar no começo é o melhor que existe.</h2>
+      <p>Primeiras parcerias recebem atenção total do nosso time. É quando acontecem os melhores resultados.</p>
+      <a href="aplicacao.html" class="btn btn--primary btn--lg btn--icon">
+        Quero aplicar agora <span class="btn__arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="margin-bottom:var(--sp-4);display:inline-flex;"><div class="nav__logo-icon" aria-hidden="true"></div>Orbit Brands</a>
+          <p>Construímos ecossistemas de faturamento recorrente para criadores de conteúdo. Sem custo de entrada.</p>
+        </div>
+        <div>
+          <p class="footer__col-title">Site</p>
+          <ul class="footer__links">
+            <li><a href="como-funciona.html">Como Funciona</a></li>
+            <li><a href="para-quem.html">Para Quem É</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="aplicacao.html">Aplicar</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contato</p>
+          <ul class="footer__links">
+            <li><a href="aplicacao.html">Call de Diagnóstico</a></li>
+            <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:oi@orbitbrands.com.br">oi@orbitbrands.com.br</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Orbit Brands. Todos os direitos reservados.</p>
+        <div class="footer__legal"><a href="#">Privacidade</a><a href="#">Termos</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/orbit.js"></script>
+</body>
+</html>

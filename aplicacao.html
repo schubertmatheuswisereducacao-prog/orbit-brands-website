@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aplicar — Orbit Brands</title>
+  <meta name="description" content="Agende sua call de diagnóstico com a Orbit Brands. 15 minutos para entender se a parceria faz sentido para você." />
+  <link rel="stylesheet" href="assets/css/orbit.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23e8a020'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%230a0800' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%230a0800'/%3E%3C/svg%3E" />
+  <style>
+    .apply-section {
+      padding: calc(var(--nav-h) + var(--sp-16)) 0 var(--sp-32);
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+    }
+    .faq__list { display: flex; flex-direction: column; gap: var(--sp-5); }
+    .faq-item { border-bottom: 1px solid var(--color-border); padding-bottom: var(--sp-5); }
+    .faq-item h4 { font-size: 1rem; margin-bottom: var(--sp-2); }
+    .faq-item p { font-size: 0.92rem; }
+    .call-steps { margin: var(--sp-8) 0; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><div class="nav__logo-icon" aria-hidden="true"></div>Orbit Brands</a>
+      <ul class="nav__links">
+        <li><a href="como-funciona.html">Como Funciona</a></li>
+        <li><a href="para-quem.html">Para Quem É</a></li>
+        <li><a href="cases.html">Cases</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="aplicacao.html" class="btn btn--primary btn--icon hide-mobile">Aplicar <span class="btn__arrow">→</span></a>
+        <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav__mobile">
+    <a href="como-funciona.html">Como Funciona</a>
+    <a href="para-quem.html">Para Quem É</a>
+    <a href="cases.html">Cases</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="aplicacao.html" style="color:var(--gold);font-weight:700;">Aplicar →</a>
+  </nav>
+
+  <!-- Application Section -->
+  <section class="apply-section">
+    <div class="container" style="width:100%;">
+      <div class="apply__grid">
+
+        <!-- Left: Info -->
+        <div class="apply__info anim-float-1">
+          <span class="badge badge--gold" style="margin-bottom:var(--sp-5);">Passo 1 de 1</span>
+          <h1>A call de<br>diagnóstico.</h1>
+          <p>Não é uma call de vendas. É uma conversa real para entender o seu trabalho — e ver se a parceria faz sentido.</p>
+
+          <div class="apply__steps call-steps">
+            <div class="apply__step">
+              <div class="apply__step-num">15'</div>
+              <div class="apply__step-text">
+                <h4>Duração máxima</h4>
+                <p>Diretos ao ponto. Sem enrolação. Se não fizer sentido, falamos abertamente.</p>
+              </div>
+            </div>
+            <div class="apply__step">
+              <div class="apply__step-num">🎯</div>
+              <div class="apply__step-text">
+                <h4>O que acontece aqui</h4>
+                <p>Entendemos sua audiência, nicho e potencial. Se enxergarmos uma oportunidade real, voltamos em 7 dias com uma proposta completa de produto.</p>
+              </div>
+            </div>
+            <div class="apply__step">
+              <div class="apply__step-num">0</div>
+              <div class="apply__step-text">
+                <h4>Custo desta conversa</h4>
+                <p>Nada. Zero. E o custo de seguir em frente também é zero — se a parceria rolar, você não paga nada.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding:var(--sp-5);background:var(--gold-dim);border:1px solid rgba(232,160,32,0.20);border-radius:var(--r-md);">
+            <p style="color:var(--gold);font-size:0.88rem;font-weight:600;margin-bottom:var(--sp-2);">Sem compromisso</p>
+            <p style="font-size:0.9rem;color:var(--color-muted);">Essa conversa não te obriga a nada. Você avalia a proposta e decide se quer avançar. Nós só começamos quando você estiver seguro.</p>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="anim-float-2">
+          <form id="apply-form" class="form" novalidate>
+            <h2 class="form__title">Quero minha call de diagnóstico</h2>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="nome">Nome</label>
+                <input class="form__input" type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="instagram">Instagram / Canal</label>
+                <input class="form__input" type="text" id="instagram" name="instagram" placeholder="@seu_perfil" required />
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="nicho">Nicho principal</label>
+              <select class="form__select" id="nicho" name="nicho" required>
+                <option value="" disabled selected>Selecione seu nicho</option>
+                <option>Finanças / Investimentos</option>
+                <option>Futebol / Esportes</option>
+                <option>Política / Notícias</option>
+                <option>Maternidade / Família</option>
+                <option>Homeschooling / Educação</option>
+                <option>Feminilidade / Moda</option>
+                <option>Geek / Games / Tecnologia</option>
+                <option>Espiritualidade / Religião</option>
+                <option>Fitness / Saúde</option>
+                <option>Gastronomia / Culinária</option>
+                <option>Lifestyle / Comportamento</option>
+                <option>Empreendedorismo</option>
+                <option>Arte / Design / Criativo</option>
+                <option>Outro</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="seguidores">Total de seguidores (soma das plataformas)</label>
+              <select class="form__select" id="seguidores" name="seguidores" required>
+                <option value="" disabled selected>Selecione a faixa</option>
+                <option>Menos de 10 mil</option>
+                <option>10k – 50k</option>
+                <option>50k – 100k</option>
+                <option>100k – 500k</option>
+                <option>500k – 1 milhão</option>
+                <option>Mais de 1 milhão</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="monetizacao">Como você monetiza hoje?</label>
+              <select class="form__select" id="monetizacao" name="monetizacao">
+                <option value="" disabled selected>Selecione a forma principal</option>
+                <option>Publicidade / Publi</option>
+                <option>Produto próprio (curso, comunidade, etc.)</option>
+                <option>AdSense / Monetização nativa</option>
+                <option>Afiliado</option>
+                <option>Eventos / Palestras</option>
+                <option>Não monetizo ainda</option>
+                <option>Mais de uma das anteriores</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="mensagem">O que sua audiência mais te pede? (opcional)</label>
+              <textarea class="form__textarea" id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o que sua audiência pergunta, o que eles querem de você..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">
+              Enviar e agendar minha call →
+            </button>
+            <p class="form__note">Respondemos em até 24 horas. Sem spam, sem pressão.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background:var(--color-surface);border-top:1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge--phase">Dúvidas rápidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+
+      <div style="max-width:720px;margin:0 auto;">
+        <div class="faq__list">
+          <div class="faq-item reveal">
+            <h4>Tem algum custo para entrar na parceria?</h4>
+            <p>Não. Zero. Nenhuma mensalidade, taxa de setup ou adiantamento. A Orbit investe a operação inteira. Você investe a audiência. Dividimos o resultado.</p>
+          </div>
+          <div class="faq-item reveal reveal-delay-1">
+            <h4>Quanto tempo leva para ter o produto no ar?</h4>
+            <p>Do diagnóstico ao produto lançado, em média 6 semanas. Depende do tipo de produto e da complexidade do lançamento, mas trabalhamos com agilidade.</p>
+          </div>
+          <div class="faq-item reveal reveal-delay-2">
+            <h4>Preciso ter muitos seguidores?</h4>
+            <p>Não definimos por número mínimo de seguidores. Avaliamos a qualidade do engajamento e a relação com a audiência. Um criador com 20k engajados pode ter mais potencial do que um com 500k frios.</p>
+          </div>
+          <div class="faq-item reveal reveal-delay-3">
+            <h4>Como funciona a divisão dos resultados?</h4>
+            <p>A divisão é acordada caso a caso, levando em conta o nicho, o tipo de produto, o potencial de escala e o investimento necessário. Detalhamos isso na call de diagnóstico.</p>
+          </div>
+          <div class="faq-item reveal reveal-delay-4">
+            <h4>Eu preciso participar muito do processo?</h4>
+            <p>Não. A maior parte do trabalho é nossa. Você participa das definições estratégicas, valida o que criamos e apresenta o produto para a audiência. O resto é com a Orbit.</p>
+          </div>
+          <div class="faq-item reveal reveal-delay-5">
+            <h4>E se o produto não vender?</h4>
+            <p>Se o produto não vender, nós não recebemos nada. Por isso fazemos o diagnóstico antes de qualquer acordo — precisamos ter certeza de que existe potencial real.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="margin-bottom:var(--sp-4);display:inline-flex;"><div class="nav__logo-icon" aria-hidden="true"></div>Orbit Brands</a>
+          <p>Construímos ecossistemas de faturamento recorrente para criadores. Sem custo de entrada.</p>
+        </div>
+        <div>
+          <p class="footer__col-title">Site</p>
+          <ul class="footer__links">
+            <li><a href="como-funciona.html">Como Funciona</a></li>
+            <li><a href="para-quem.html">Para Quem É</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contato direto</p>
+          <ul class="footer__links">
+            <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:oi@orbitbrands.com.br">oi@orbitbrands.com.br</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Orbit Brands. Todos os direitos reservados.</p>
+        <div class="footer__legal"><a href="#">Privacidade</a><a href="#">Termos</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/orbit.js"></script>
+</body>
+</html>

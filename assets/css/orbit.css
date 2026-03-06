@@ -493,6 +493,10 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
 }
 
+.hero .container {
+  max-width: 1350px;
+}
+
 .hero__content {
   max-width: 600px;
   position: relative;
@@ -526,21 +530,21 @@ a { color: inherit; text-decoration: none; }
 /* ── Canvas orbital ────────────────────────────────────── */
 #orbital-canvas {
   position: absolute;
-  right: 2%;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
-  width: clamp(450px, 55vw, 750px);
-  height: clamp(450px, 55vw, 750px);
+  width: clamp(550px, 60vw, 850px);
+  height: clamp(550px, 60vw, 850px);
   z-index: 1;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {
   #orbital-canvas {
     right: -10%;
     opacity: 0.40;
-    width: 550px;
-    height: 550px;
+    width: 600px;
+    height: 600px;
   }
 
   .hero__content { max-width: 100%; }

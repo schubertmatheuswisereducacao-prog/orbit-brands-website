@@ -16,9 +16,8 @@
   const PLANETS = [
     { name: 'Produto',      emoji: '📦', color: '#e8a020', a: 0.42, b: 0.18, speed: 0.0008,  offset: 0,    angle: Math.PI * 0.3,  size: 9 },
     { name: 'Funil',        emoji: '🎯', color: '#00d4ff', a: 0.54, b: 0.24, speed: 0.00055, offset: 1.2,  angle: Math.PI * 0.9,  size: 8 },
-    { name: 'Tráfego',      emoji: '📡', color: '#a78bfa', a: 0.66, b: 0.30, speed: 0.0004,  offset: 2.4,  angle: Math.PI * 1.5,  size: 8.5 },
-    { name: 'Suporte',      emoji: '⚡', color: '#34d399', a: 0.44, b: 0.21, speed: 0.00035, offset: 0.8,  angle: Math.PI * 0.6,  size: 7 },
-    { name: 'Recorrência',  emoji: '♾️', color: '#fb7185', a: 0.60, b: 0.27, speed: 0.0003,  offset: 1.8,  angle: Math.PI * 1.2,  size: 9.5 },
+    { name: 'Suporte',      emoji: '⚡', color: '#34d399', a: 0.48, b: 0.21, speed: 0.00045, offset: 0.8,  angle: Math.PI * 0.6,  size: 7.5 },
+    { name: 'Recorrência',  emoji: '♾️', color: '#fb7185', a: 0.64, b: 0.29, speed: 0.0003,  offset: 1.8,  angle: Math.PI * 1.4,  size: 9.5 },
   ];
 
   const PARTICLES = Array.from({ length: 80 }, () => ({

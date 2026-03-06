@@ -97,7 +97,7 @@
       const msg = encodeURIComponent(
         `Olá! Me chamo ${name}, atuo no nicho de ${nicho} e tenho ${followers} seguidores. Quero saber mais sobre o Método Orbit Partners.`
       );
-      const wa = `https://wa.me/5511999999999?text=${msg}`;
+      const wa = `https://wa.me/5547999887708?text=${msg}`;
 
       setTimeout(() => {
         window.open(wa, '_blank');
